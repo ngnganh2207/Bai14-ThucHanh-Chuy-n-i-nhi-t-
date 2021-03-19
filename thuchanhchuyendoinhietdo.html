@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực Hành Chuyển Đổi Nhiệt Độ</title>
+</head>
+<body>
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)"/>
+    <p>Celsius:<span id="outputCelsius"></span></p>
+</p>
+<script>
+    function temperatureConverter(a){
+        a=parseFloat(a);
+        document.getElementById("outputCelsius").innerHTML=(a-32)/1.8;
+    }
+</script>
+</body>
+</html>
